@@ -1,0 +1,673 @@
+/*
+=== CSS Reset ===
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+  
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ================================================================================================================
+===================================================================================================================
+=======================================    =    CSS  GOES  HERE   =    ============================================
+===================================================================================================================
+================================================================================================================ */
+
+/* === BODY === */
+
+
+/* == FLEX == */
+
+.html,
+.wrapper,
+.header,
+.navbar,
+.navbar ul,
+.detail:nth-child(2),
+.pic-details,
+.social-bio,
+.social,
+.bio,
+.title,
+.experience,
+.education,
+.edu-exp-wrapper,
+.skills,
+.expertise,
+.column,
+.contact,
+.contact-form,
+.contact-form-row-1 { /* DISPLAY: FLEX; */
+    display: flex;
+}
+
+.wrapper,
+.detail:nth-child(2),
+.social-bio,
+.bio,
+.experience,
+.education,
+.edu-exp-wrapper,
+.column,
+.contact-form { /* FLEX-DIRECTION: COLUMN; */
+    flex-direction: column;
+}
+
+.header,
+.navbar,
+.navbar ul,
+.pic-details,
+.social,
+.title,
+.skills,
+.expertise,
+.contact,
+.contact-form-row-1 { /* FLEX-DIRECTION: ROW; */
+    flex-direction: row;
+}
+
+.wrapper,
+.navbar ul,
+.detail:nth-child(2),
+.pic-details,
+.social-bio,
+.social,
+.bio,
+.title,
+.experience,
+.education,
+.edu-exp-wrapper,
+.skills,
+.contact,
+.contact-form { /* JUSTIFY-CONTENT: CENTER; */
+    justify-content: center;
+}
+
+/* . {
+    justify-content: space-around;
+} */
+
+.navbar,
+.expertise { /* JUSTIFY-CONTENT: SPACE-EVENLY; */
+    justify-content: space-evenly;
+}
+
+.header,
+.contact-form-row-1 { /* JUSTIFY-CONTENT: SPACE-BETWEEN; */
+    justify-content: space-between;
+}
+
+.wrapper { /* ALIGN-ITEMS: STRETCH; */
+    align-items: stretch;
+}
+
+.header,
+.social-bio,
+.bio,
+.title,
+.experience,
+.education,
+.edu-exp-wrapper { /* ALIGN-ITEMS: CENTER; */
+    align-items: center;
+}
+
+/* . {
+    align-items: flex-start;
+}
+
+. {
+    align-items: flex-end;
+}
+
+. {
+    flex-wrap: wrap;
+} */
+
+/* == WIDTH & HEIGHT == */
+
+.wrapper {
+    min-width: 300px;
+}
+
+.detail {
+    width: 20%;
+    min-width: 285px;
+    max-width: 285px;
+}
+
+.pic {
+    width: 100%;
+}
+
+.social,
+.bio {
+    width: 570px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.edu-exp-wrapper {
+    width: 85%;
+}
+
+.exp-detail {
+    width: 45%;
+}
+
+.skills-left-item,
+.skills-right-item {
+    width: 300px;
+    min-width: 200px;
+}
+
+.column {
+    width: 20%;
+}
+
+.contact-form {
+    width: 35%;
+    min-width: 500px;
+}
+
+.contact-form-row-1-item {
+    width: 48%;
+}
+
+.contact-form-row-1-item,
+.contact-form-row-2 {
+    height: 30px;
+    border: unset;
+}
+
+.text-area {
+    height: 100px;
+}
+
+/* == MARGINS == */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.pic-details {
+    margin-top: 100px;
+}
+
+.navbar-item:nth-child(6) {
+    margin-right: 30px;
+}
+
+.name-logo,
+.navbar-item {
+    margin-left: 30px;
+}
+
+.social-icon {
+    margin: 0 15px;
+}
+
+.bio {
+    margin-bottom: 30px;
+}
+
+.paragraph-name,
+.paragraph-head,
+.paragraph-detail {
+    margin-left: 45px;
+}
+
+.paragraph-name,
+.paragraph-head:first-of-type,
+.paragraph-detail {
+    margin-bottom: 10px;
+}
+
+.exp-title,
+.edu-title,
+.exp-years,
+.edu-years {
+    margin-bottom: 10px;
+}
+
+.skills-left-item,
+.skills-right-item {
+    margin: 20px 10px;
+}
+
+.column-title {
+    margin: 20px 0;
+}
+
+.column-text {
+    margin-bottom: 20px;
+}
+
+.contact-form-row-1,
+.contact-form-row-2,
+.contact-form-button {
+    margin: 8px;
+}
+
+/* == PADDINGS == */
+
+.header,
+.social,
+.bio-title {
+    padding: 50px 0;
+}
+
+.pic-details {
+    padding-top: 50px;
+}
+
+.social-bio {
+    padding-bottom: 25px;
+}
+
+.experience,
+.education {
+    padding: 30px 0;
+}
+
+.exp-detail,
+.edu-detail {
+    padding: 15px 0;
+}
+
+.expertise {
+    padding: 30px 0;
+}
+
+.skills-left-item,
+.skills-right-item {
+    padding: 20px 10px;
+}
+
+.contact-form {
+    padding: 30px 0;
+}
+
+.contact-form-button {
+    padding: 10px 0;
+}
+
+/* === COLORS, BORDERS & EFFECTS === */
+
+.header {
+    background-color: white;
+}
+
+.title {
+    padding: 50px 0;
+    border-top: 0.1px solid gray;
+    border-bottom: 0.1px solid gray;
+}
+
+.social,
+.contact,
+.pic-details,
+.experience,
+#education {
+    background-color: #224960;
+}
+
+.social-icon svg {
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.detail:nth-of-type(2),
+.skills-left-item,
+.skills-right-item {
+    background-color: #7a919f;
+}
+
+.exp-title,
+.edu-title,
+.exp-years,
+.edu-years {
+    padding-top: 10px;
+}
+
+.contact {
+    border-bottom: 1px solid gray;
+}
+
+.contact-form-button {
+    background-color: #90a4af;
+}
+
+.contact-form-button:hover {
+    background-color: white;
+    color: #224960;
+}
+
+/* === TEXT === */
+
+.capitals {
+    text-transform: uppercase;
+}
+
+.name-logo,
+.navbar ul,
+.contact-form-button {
+    text-align: center;
+    font-weight: bold;
+}
+
+.bio-text {
+    text-align: justify;
+}
+
+.general-text-item {
+    color: #224960;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.big-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.normal-text {
+    font-size: 13px;
+}
+
+.bio-title,
+.bio-text {
+    line-height: 15px;
+}
+
+.name-logo a,
+.bio-title,
+.bio-text {
+    color: #224960;
+}
+
+.paragraph-name {
+    padding: 0;
+    margin-top: 20px;
+    text-align: unset;
+}
+
+.paragraph-head {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.exp-title,
+.edu-title,
+.exp-years,
+.edu-years,
+.exp-detail,
+.edu-detail {
+    text-align: justify;
+}
+
+.white-text {
+    color: white;
+}
+
+.exp-title,
+.edu-title,
+.exp-years,
+.edu-years {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.skills {
+    background-color: #224960;
+}
+
+.skills-left-item,
+.skills-right-item {
+    color: white;
+}
+
+.column-text {
+    text-align: justify;
+}
+
+.bio-text,
+.column-text,
+.exp-detail,
+.edu-detail {
+    line-height: 18px;
+}
+
+.footer p {
+    padding: 15px 0 15px 30px;
+    color: white;
+    background-color: #224960;
+}
+
+input:focus::placeholder,
+.text-area:focus::placeholder {
+    color: transparent;
+}
+
+/* == LINKS == */
+
+a {
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: #90a4af;
+}
+
+.social-icon svg:hover {
+    opacity: 0.4;
+    transform: rotate(360deg);
+}
+
+.skills-left-item,
+.skills-right-item,
+.column-title {
+    text-align: center;
+}
+
+.column-title {
+    font-weight: bold;
+}
+
+/* ================== */
+/* === RESPONSIVE === */
+/* ================== */
+
+@media (max-width: 860px) {
+    .header,
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .name-logo {
+        padding: 20px 0;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+        background-color: #224960;
+        border-bottom: 1px solid #90a4af;
+    }
+
+    .navbar ul li a {
+        color: white;
+    }
+
+    .navbar,
+    .navbar ul,
+    .navbar ul li,
+    .name-logo,
+    .exp-detail {
+        width: 100%;
+    }
+    .name-logo,
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar-item:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .paragraph-name {
+        margin-left: 45px;
+    }
+
+    .pic-details {
+        margin-top: 280px;
+    }
+
+}
+
+@media (max-width: 710px) {
+    .skills {
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    .skills-left-item,
+    .skills-right-item {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .expertise,
+    .skills {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 610px) {
+    .bio {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .pic-details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        padding-bottom: 0;
+        min-width: 300px;
+    }
+    .detail {
+        width: 50%;
+    }
+    .detail:nth-child(2) {
+        height: 250px;
+    }
+
+    .bio {
+        width: 95%;
+    }
+}
+
+@media (max-width: 530px) {
+    .contact {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 95%;
+        min-width: 300px;
+    }
+
+    .pic-details,
+    .contact-form-row-1 {
+        flex-direction: column;
+    }
+
+    .contact-form-row-1-item {
+        width: 100%;
+    }
+
+    .contact-form-row-1-item:first-of-type {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .social {
+        width: 100%;
+    }
+}
