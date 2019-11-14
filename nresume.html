@@ -16,6 +16,7 @@
                 <div class="name-logo capitals"><a href="#" class="general-text-item big-text">Nikita Meena</a></div>
                 <div class="navbar">
                     <ul>
+                        <li class="navbar-item capitals"><a href="map.html" class="general-text-item normal-text">View location</a></li>
                         <li class="navbar-item capitals"><a href="#bio" class="general-text-item normal-text">bio</a></li>
                         <li class="navbar-item capitals"><a href="#experience" class="general-text-item normal-text">Experience</a></li>
                         <li class="navbar-item capitals"><a href="#education" class="general-text-item normal-text">education</a></li>
@@ -25,6 +26,28 @@
                     </ul>
                 </div>
             </header>
+<section id="map">
+            <div id="map"> <h1>hiiiiiiiiii</h1></div>
+        <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpzT2gkHL8PIAlFd1xDqHkXEp_gbl4qlI
+    &callback=initMap"
+    async defer></script>
+
+</section>
+
+
+
+
+
+
 
             <section class="pic-details">
                 <div class="detail">
@@ -174,5 +197,9 @@ Github link- https://github.com/nikkyme/college_site
             </footer>
 
         </section>
+
+
+
+
     </body>
 </html>
